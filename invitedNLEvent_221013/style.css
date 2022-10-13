@@ -34,3 +34,31 @@ div{
 .btn_img{
 	width: 93vw;
 }
+
+
+
+@media (min-width: 1000px) {
+
+	body{
+		max-width: 425px;
+	}
+
+	div{
+		max-width: 425px;
+	}
+	.video{
+		max-width: 425px;
+	}
+
+	.img{
+		max-width: 425px;
+	}
+
+	#btn{
+		max-width: 425px;
+	}
+
+	.btn_img{
+		max-width: 425px;
+	}
+}
