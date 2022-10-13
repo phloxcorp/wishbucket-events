@@ -1,6 +1,6 @@
 
 body{
-	margin: 0px;
+	margin: 0 auto;
 	display: block;
 	width: 100vw;
 	max-width: 100%;
@@ -23,3 +23,41 @@ div{
 	width: 100%;
 }
 
+#btn{
+	position: fixed;
+	bottom: 50px;
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn_img{
+	width: 93vw;
+}
+
+
+@media (min-width: 425px) {
+
+	body{
+		max-width: 425px;
+	}
+
+	div{
+		max-width: 425px;
+	}
+	.video{
+		max-width: 425px;
+	}
+
+	.img{
+		max-width: 425px;
+	}
+
+	#btn{
+		max-width: 425px;
+	}
+
+	.btn_img{
+		max-width: 425px;
+	}
+}
