@@ -24,17 +24,21 @@ div{
 	padding-bottom:36px;
 }
 
-.subEventSection1{
+.subEventSection{
 	background-color: #181717;
 }
 
-
-.subEventSection2{
-	background-color: #181717;
+.secretdeal{
+	width:calc(100% - 32px);
+	text-align: center;
+	margin:0 auto;
+	margin-bottom: 18px;
 }
 
-.subEventSection3{
-	background-color: #181717;
+
+.card_img{
+	width:45%;
+	margin:6px;
 }
 
 
@@ -50,7 +54,7 @@ div{
 }
 
 .btn_img{
-	width: 93vw;
+	width: 100vw;
 }
 
 
