@@ -15,14 +15,16 @@ div{
 
 
 .eventSection1{
-	background-color: #C1AAFF;
-	padding-bottom:36px;
+	background-color: #FAF2E8;
 }
 
 
 .eventSection2{
-	background-color: #8B90FF;
-	padding-bottom:36px;
+	background-color: #FAF2E8;
+}
+
+.eventSection4{
+	background-color: #E5DDD1;
 }
 
 .subEventSection{
@@ -64,6 +66,19 @@ div{
 	width: 100vw;
 }
 
+.appstoreImg{
+	width:40%;
+}
+
+.instagram{
+	margin-left: -65%;
+
+}
+
+.instagramIcon{
+	width:16%;
+	margin-bottom:15%;
+}
 
 
 @media (min-width: 1000px) {
