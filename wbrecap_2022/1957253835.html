@@ -1,0 +1,111 @@
+<html>
+<head>
+	<link href="style.css" rel="stylesheet">
+	<script src="https://cdn.skypack.dev/jquery@3.5.1"></script>
+	<meta property="og:title" content="2022 위시 리포트">
+	<meta property="og:image" content="https://www.phloxcorp.io/wishbucket-events/wbrecap_2022/files/og_image_1957253835.png">
+	<meta property="og:description" content="위시버킷과 함께했던 한 해">
+	<meta name="twitter:card" content="summary_large_image">
+ 
+</head>
+
+
+<body>
+	
+	<!-- 상단 안내 영역 1 -->	
+
+	<div class="subEventSection">
+		<!-- 이미지 -->
+		<div class="image">
+			<img class= "img" src="files/section1.png" alt="firstimg">
+		</div>
+
+		<!--하단 버튼-->
+		<a class="img" id="btn" href="https://www.wishbucket.io/users/1957253835" target="_blank">
+	     		 <img class="img" src="files/tag_1957253835.png"/>
+	  	</a>
+
+	  	<div class="image">
+			<img class= "img" src="files/wishes_1957253835.png" alt="firstimg">
+		</div>
+
+  	</div>	
+
+
+  	<!-- 상단 안내 영역 2 -->	
+
+	<div class="subEventSection">
+		<!-- 이미지 -->
+		<div class="image">
+			<img class= "img" src="files/section2.png" alt="firstimg">
+		</div>
+
+		
+	  	<div class="image">
+			<img class= "img" src="files/item_1957253835.png" alt="firstimg">
+		</div>
+
+  	</div>	
+
+ 	<!-- 상단 안내 영역 3 -->	
+
+	<div class="subEventSection">
+		<!-- 이미지 -->
+		<div class="image">
+			<img class= "img" src="files/section3.png" alt="firstimg">
+		</div>
+
+		
+	  	<div class="image">
+			<img class= "img" src="files/brand_1957253835.png" alt="firstimg">
+		</div>
+
+  	</div>	
+
+
+ 	<!-- 상단 안내 영역 3 -->	
+
+	<div class="subEventSection">
+		<!-- 이미지 -->
+		<div class="image">
+			<img class= "img" src="files/section4.png" alt="firstimg">
+		</div>
+
+
+		<!--하단 버튼-->
+
+		<a class="img" id="shareBtn"  href="#" onclick="clip(); return false;">
+	     		 <img class="btn_img" src="files/share.png"/>
+	  	</a>
+
+
+		<!--하단 버튼-->
+
+		<a class="img" id="btn" href="https://forms.gle/JAamT55nA6ASzfFE9" target="_blank">
+	     		 <img class="btn_img" src="files/survey.png"/>
+	  	</a>
+
+
+  	</div>	
+
+<script type=text/javascript>
+	function clip(){
+
+	var url = '';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	url = window.document.location.href;
+	textarea.value = url;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("URL copied to clipboard")
+}
+</script>
+
+
+
+</body>
+
+
+</html>
