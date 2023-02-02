@@ -14,3 +14,7 @@ const highlightLinka =(e) =>{
     const thesection = document.querySelector(e.target.id);
     thesection.classList.remove("section_hide");
 }
+
+document.ondblclick = function(e) {
+  e.preventDefault();
+}
