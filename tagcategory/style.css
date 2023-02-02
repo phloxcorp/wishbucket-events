@@ -13,12 +13,12 @@ html{
 button{
     appearance:none;
     border: 0;
+    color:black;
+    font-size: 14px;
     background-color: transparent;
     cursor:pointer;
     -moz-appearance:none;
     -webkit-appearance:none;
-    -webkit-border-radius:0;
-    -moz-border-radius:0;
 }
 
 #title{
@@ -111,12 +111,14 @@ button{
     text-align:center;
     width:112px;
     text-decoration:none;
+
 }
 
 .photos{
     border-radius:20px;
     aspect-ratio: 1 / 1;
     overflow:hidden;
+    border:solid 1px #e6e6e6;
 }
 
 .photobox1{
