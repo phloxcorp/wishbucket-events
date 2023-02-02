@@ -34,11 +34,11 @@ button{
     align-items:center;
     margin:0;
     height:auto;
+    border-bottom:1px solid rgba(230,230,230,0.6)
 }
 
 #wrapper{
     display:flex;
-    border-top:solid 1px rgba(230,230,230,0.6);
     margin-top:60px;
     height:752px;
     overflow:hidden;
