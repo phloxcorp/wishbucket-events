@@ -20,5 +20,5 @@ window.addEventListener("load", function() {
     setTimeout(function() {
       container.style.display = "block";
       loaderContainer.style.display = "none";
-    }, 300); // Change this value to the desired delay time in milliseconds
+    }, 100); // Change this value to the desired delay time in milliseconds
   });
