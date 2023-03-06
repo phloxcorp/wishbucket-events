@@ -125,10 +125,11 @@
 		const app = initializeApp(firebaseConfig);
 		const analytics = getAnalytics(app);
 
+
 		const divElements = document.querySelectorAll('.section_image');
 			divElements.forEach((divElement) => {
 			divElement.addEventListener('click', () => {
-			firebase.analytics().logEvent('select_content', {
+			analytics.logEvent('select_content', {
 			content_type: 'image',
 			item_id: divElement.id,
 			item_name: 'image clicked'
