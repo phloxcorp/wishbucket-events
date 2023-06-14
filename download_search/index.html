@@ -8,6 +8,15 @@
 	<meta name="twitter:title" content="위시버킷 WISHBUCKET" /> 
 	<meta name="twitter:description" content="여러 스토어에서 한 번에 통합검색" /> 
 	<meta name="twitter:image" content="files/og_image2.jpg" /> 
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N5T3KPY05J"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-N5T3KPY05J');
+	</script>
 </head>
 
 
@@ -17,7 +26,7 @@
 
 	<div class="eventSection1">
 		<!-- 이미지 -->
-		<a class="image" href="https://app.wishbucket.io/search" target="_blank" >
+		<a class="image download" href="https://app.wishbucket.io/search" target="_blank" >
 			<img class= "img" src="files/title_img.png" alt="firstimg">
 		</a>
   	</div>	
@@ -61,7 +70,7 @@
 	<div class="eventSection4">
 		
 		<!-- 이미지 -->
-		<a class="image" href="https://app.wishbucket.io/search" target="_blank" >
+		<a class="image download" href="https://app.wishbucket.io/search" target="_blank" >
 			<img class= "img" src="files/last_download.png" alt="secondimg">
 		</a>
 
@@ -79,7 +88,11 @@
 
 	</div>
 	
+	<script type="module">
+		import addLogEvent from '../lib/firebase.js'
 
+		addLogEvent('.download', 'click_app_download', 'search')
+	</script>
 
 </body>
 
