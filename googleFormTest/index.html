@@ -22,7 +22,7 @@
             function submitForm() {
               var form = document.getElementById("myForm");
               var formData = new FormData(form);
-              var url = 'https://script.google.com/macros/s/AKfycbwrP9E1PeAvUt0infA_UNIC1H5ji8ZYiSDSP9wTq3D0Q0mK_W8P_n0bbGkEk5Q5sWQ/exec'; // 앞서 복사한 웹 애플리케이션 링크
+              var url = 'https://script.google.com/a/macros/phloxcorp.io/s/AKfycbxpJULlKNvvR7g9xFQ5rIjf96GnFLvYTNqmoqj_WZBN66gcmQfwLs_-z7m_ibzeABA9/exec'; // 앞서 복사한 웹 애플리케이션 링크
               fetch(url, { method: 'POST', body: formData })
                 .then(response => response.text())
                 .then(data => {
