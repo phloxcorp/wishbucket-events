@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+
+    <style>
+        /* Basic CSS styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
 
 <body>
 
 <a href="https://pickin-qa.phloxcorp.io/promo-events/13" target="_blank">
-    <div style="width:100px; height:100px; background-color:blue;">응모형</div>
+    <div style="width:300px; height:300px; background-color:blue;">응모형</div>
 </a>    
 
 <a href="https://pickin-qa.phloxcorp.io/promo-events/14?type=SHARE" target="_blank">
-    <div style="width:100px; height:100px; background-color:pink;">공유형</div>
+    <div style="width:300px; height:300px; background-color:pink;">공유형</div>
 </a>
+
+<form id="dataForm" style="padding-top:36px;">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+
+<script>
+
+const pat = 'patsqZ6uykQOQJT4D.6271211bfdbd85b527609b7353fc4f2effd15eacfd0a93044adb114a027dacff';
+const baseId = 'appuu7wYuoJ3AocTR';
+const tableName = 'practice';
+
+document.getElementById("dataForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+
+    // Create a new record to send to Airtable
+    const record = {
+        "fields": {
+            "Name": name,
+            "Email": email
+        }
+    };
+
+    fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
+        method: "POST",
+        headers: {
+            "Authorization": `Bearer ${pat}`,
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(record)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Data submitted successfully:", data);
+        // You can display a success message to the user here
+        document.getElementById("dataForm").reset();
+    })
+    .catch(error => {
+        console.error("Error submitting data to Airtable:", error);
+        // Handle errors or display an error message to the user
+    });
+});
+</script>
 
 
 </body>
