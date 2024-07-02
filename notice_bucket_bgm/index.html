@@ -1,0 +1,98 @@
+<html>
+<head>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<meta property="og:title" content="위시버킷 WISHBUCKET">
+	<meta property="og:image" content="files/og_image2.jpg">
+	<meta property="og:description" content="여러 스토어에서 한 번에 통합검색">
+	<meta name="twitter:title" content="위시버킷 WISHBUCKET" /> 
+	<meta name="twitter:description" content="여러 스토어에서 한 번에 통합검색" /> 
+	<meta name="twitter:image" content="files/og_image2.jpg" /> 
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N5T3KPY05J"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-N5T3KPY05J');
+	</script>
+</head>
+
+
+<body>
+
+	<!-- 타이틀영역 -->	
+
+	<div class="eventSection1">
+		<!-- 이미지 -->
+		<div class="image download" >
+			<img class= "img" src="files/title_img.png" alt="firstimg">
+		</div>
+  	</div>	
+
+
+	<!-- 이벤트 안내 영역 1 -->	
+
+	<div class="eventSection2">
+		<!-- 이미지 -->
+		<div class="image">
+			<img class= "img" src="files/point1.png" alt="secondimg">
+		</div>
+
+	</div>
+
+
+	<!-- 이벤트 안내 영역 2 -->	
+
+	<div class="eventSection3">
+		<!-- 이미지 -->
+		<div class="image">
+			<img class= "img" src="files/point2.png" alt="secondimg">
+		</div>
+
+	</div>
+
+		<!-- 이벤트 안내 영역 3 -->	
+
+	<div class="eventSection3">
+		<!-- 이미지 -->
+		<a class="image" href="https://www.wishbucket.io/bucket-bgm-rank">
+			<img class= "img" src="files/point3.png" alt="secondimg">
+		</a>
+
+	</div>
+
+
+
+	<!-- download -->	
+
+	<div class="eventSection4">
+		
+		<!-- 이미지 -->
+		<div class="image download"  >
+			<img class= "img" src="files/last_download.png" alt="secondimg">
+		</div>
+
+
+	</div>
+
+
+	<div class="eventSection3">
+		<!-- 이미지 -->
+		<div class="image">
+			<img class= "img" src="files/footer.png" alt="secondimg">
+		</div>
+
+	</div>
+	
+	<script type="module">
+		import addLogEvent from '../lib/firebase.js'
+
+		addLogEvent('.download', 'click_app_download', 'search')
+	</script>
+
+</body>
+
+
+</html>
