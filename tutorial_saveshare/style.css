@@ -55,13 +55,6 @@ div{
 	transform: translateX(-50%);
 }
 
-.make_button{
-	position: fixed;
-	bottom: 0;
-	left:0;
-	width: 100vw;
-}
-
 
 @media (min-width: 1000px) {
 
