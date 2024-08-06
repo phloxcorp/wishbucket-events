@@ -6,7 +6,7 @@ body{
 	max-width: 100%;
 	text-align: center;
 	overflow-x: hidden;
-	background-color:#181717;
+	background-color:#ffffff;
 }
 
 div{
@@ -15,15 +15,11 @@ div{
 
 
 .eventSection1{
-	background-color: #C1AAFF;
+	background-color: #F3F4FF;
 	padding-bottom:36px;
 }
 
 
-.eventSection2{
-	background-color: #8B90FF;
-	padding-bottom:36px;
-}
 
 .subEventSection{
 	background-color: #181717;
