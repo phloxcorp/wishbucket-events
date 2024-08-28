@@ -1,0 +1,26 @@
+:root {
+  --color-styles-textblackonwhite: rgba(24, 23, 23, 1);
+  --color-styles-backgroundwhite: rgba(255, 255, 255, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-color-styles-mode="light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-color-styles-mode="light"] {
+  --color-styles-textblackonwhite: rgba(24, 23, 23, 1);
+  --color-styles-backgroundwhite: rgba(255, 255, 255, 1);
+}
+
+[data-color-styles-mode="dark"] {
+  --color-styles-textblackonwhite: rgba(255, 255, 255, 1);
+  --color-styles-backgroundwhite: rgba(45, 45, 45, 1);
+}
